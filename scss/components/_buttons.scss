@@ -1,0 +1,102 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    height: 50px;
+    padding: 10px;
+
+    font-family: $font-family-primaty;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+
+    transition: color 250ms $cubic-bezier-primary,
+                background-color 250ms $cubic-bezier-primary,
+                border-radius 250ms $cubic-bezier-primary,
+                box-shadow 250ms $cubic-bezier-primary; 
+
+    border: 0px solid transparent;
+    border-radius: 4px;
+    color: $color-white-primary; 
+    background-color: $color-accent;
+    outline: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+    background-color: $bg-hover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+
+// Hero button
+
+.hero__button {
+    padding: 10px 32px; 
+    margin: auto;
+}
+
+// Button-footer
+
+.footer__button {
+    
+    &__button:hover,
+    &__button:focus {
+    background-color: $bg-hover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   }
+}
+
+// Button-close
+.modal__button-close {
+    position: absolute;
+    top: 8px;
+    right: 8px; 
+   
+}
+
+.button-close {
+    width: 30px;
+    height: 30px;
+
+    background: $color-white-primary;
+    border: 1px solid $border-color-button-close;
+    border-radius: 50%;
+    color: $color-title-text;
+    outline: none;
+    cursor: pointer;
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        transition: fill 250ms $cubic-bezier-primary,
+                    translate 250ms $cubic-bezier-primary;
+        fill: currentColor;
+    }
+    
+    &:hover .button-close__icon,
+    &:focus .button-close__icon {
+        fill: $color-accent;
+    }
+}
+
+
+
+// Modal button
+
+.modal__button {
+    margin: auto;
+    
+    &__button:hover,
+    &__button:focus {
+    background: $bg-hover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
