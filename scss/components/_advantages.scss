@@ -1,13 +1,17 @@
 .advantages {
   @extend %list; 
-   gap: 30px;
-   outline: 2px solid blue;
 
    &__item {
-    background-color: green;
-    font-size: 40px;
-   }
-   
+       @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+       
+       }
+     } 
+    }
+
+    
+ 
    
    &__icon-wrapper {
     display: flex;
@@ -19,8 +23,26 @@
     background-color: $bg-color-primary;
     border-radius: 4px;
  }
-}
-  .avantages__item {
-    background-color: yellow;
+
+ &__secondary-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  color: $color-title-text;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
   }
- 
+}
+
+&__text {
+  margin: 0px;
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+}

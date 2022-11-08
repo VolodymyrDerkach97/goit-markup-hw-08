@@ -21,6 +21,10 @@ body {
     @media screen and (min-width: $mobile) {
         width: $mobile;
     }
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
     
     outline: 1px solid red;
 }
