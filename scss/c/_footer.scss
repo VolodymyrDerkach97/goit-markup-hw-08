@@ -5,8 +5,8 @@
     background-color: $bg-color;
 
     &__container {
-        // display: flex;
-        // align-items: baseline;
+        display: flex;
+        align-items: baseline;
     }
     
     
@@ -146,7 +146,7 @@
     }
     
     &__subscribe-block {
-        // width: 570px;
+        width: 570px;
         margin-left: auto;
        
     }
