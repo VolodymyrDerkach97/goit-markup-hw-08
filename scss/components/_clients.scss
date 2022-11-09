@@ -1,15 +1,16 @@
 .clients {
     @extend %list;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
+   
 
     &__item {
-        width: calc((100% - 5*30px) / 6);
+        width: calc((100% - 2*30px) / 3);
         height: 92px;  
        
     }
-    
+
     &__link {
         display: flex;
         width: 100%;
@@ -29,7 +30,7 @@
             border-color: $color-accent;
     }
     }
-    
+
     &__icon {
         fill: currentColor;
     }

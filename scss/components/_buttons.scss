@@ -34,9 +34,14 @@
 
 .button-menu {
     padding: 0;
-    margin-left: 0;
+    margin-left: auto;
     border: none;
     background-color: transparent;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+        appearance: none;
+    }
 }
 
 // Hero button
@@ -49,7 +54,7 @@
 // Button-footer
 
 .footer__button {
-    
+    margin: 0 auto;
     &__button:hover,
     &__button:focus {
     background-color: $bg-hover;
