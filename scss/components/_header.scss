@@ -2,17 +2,14 @@
     border-bottom: 1px solid $border-color-secondary;
 
   
-
-   
     &__navigation {
         display: flex;
         align-items: center;
+        height: 60px;
        
         @media screen and (min-width: $tablet) {
-            max-height: 80px;
-        
+            height: 80px;
         }
-        
     }
 }
 
@@ -79,12 +76,10 @@
     gap: 10px;
 
     @media screen and (min-width: $desktop) {
-        display: flex;
-        margin: 0px;
-        align-items: center;
+        flex-direction: row;
+        gap: 30px;
     }
 
-   
     &__link {
         display: flex;
         align-items: center;
@@ -106,6 +101,9 @@
         @media screen and (min-width: $desktop) {
             padding-top: 32px;
             padding-bottom: 32px;
+
+            font-size: 14px;
+            line-height: 1.14;
         }
 
         &:hover,
@@ -130,6 +128,11 @@
         display: flex;
         align-items: center;
        gap: 96px
+
+    }
+
+    @media screen and (min-width: $desktop) {
+       gap: 315px
 
     }
 }

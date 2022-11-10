@@ -3,6 +3,11 @@ section {
     margin-left: auto;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
     
 }
 
@@ -15,5 +20,11 @@ section {
     font-size: 28px;
     line-height: 1.17;
     text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.16;
+    }
 
 }

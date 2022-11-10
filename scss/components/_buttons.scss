@@ -49,6 +49,10 @@
 .hero__button {
     padding: 10px; 
     margin: auto;
+
+    @media screen and (min-width: $desktop) {
+        padding: 10px 32px; 
+    }
 }
 
 // Button-footer

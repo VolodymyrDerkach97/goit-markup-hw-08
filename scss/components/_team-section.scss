@@ -4,8 +4,12 @@
     &__list {
         @extend %list;
         
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: $tablet){
             display: flex;
+           
+           }
+
+        @media screen and (min-width: $tablet) and (max-width: 1199px){
             flex-wrap: wrap;
             margin: -15px;
            }

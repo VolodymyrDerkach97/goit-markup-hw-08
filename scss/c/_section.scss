@@ -3,6 +3,13 @@ section {
     margin-left: auto;
     padding-top: 94px;
     padding-bottom: 94px;
+
+    @media screen and (min-width: $desktop) {
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 94px;
+        padding-bottom: 94px;
+       }
     
 }
 

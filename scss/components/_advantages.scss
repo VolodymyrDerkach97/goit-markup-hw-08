@@ -2,23 +2,38 @@
   @extend %list; 
 
   @media screen and (min-width: $tablet) {
-      display: flex;
-      flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px)  {
       margin: -15px;
      }
+
+    
    &__item {
 
-    @media screen and (min-width: $tablet) {
-      margin: 15px;
-      width: calc((100% - 2 * 30px)/2);
-    }
-    
-
-       @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       &:not(:last-child) {
         margin-bottom: 30px;
        }
      } 
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      margin: 15px;
+      width: calc((100% - 2 * 30px)/2);
+    }
+    
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 3 * 30px)/4);
+       margin-right: 30px;
+
+       &:last-child {
+         margin-right: 0;
+      }
+    }
+      
+
+
     }
 
     
@@ -46,6 +61,7 @@
   @media screen and (max-width: 767px) {
     text-align: center;
   }
+
 }
 
 &__text {

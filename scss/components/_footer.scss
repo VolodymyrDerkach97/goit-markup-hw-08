@@ -1,18 +1,20 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    height: 603px;
 
     background-color: $bg-color;
 
-    @media screen and (min-width: $tablet) {
-        height: 463px;
-    }
 
     &__container {
-    
-       text-align: center;
+       
+        @media screen and (max-width: 1199px) {
+            text-align: center;
+        }
       
+       @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: baseline;
+       }
     }
 
     &__contacts-wrapper {
@@ -22,13 +24,16 @@
             justify-content: center;
             align-items: baseline;
         }
+
+        @media screen and (min-width: $desktop) {
+            gap: 95px;
+        }
     }
 
     &__address-wrapper {
-        margin-bottom: 60px;
 
-        @media screen and (min-width: $tablet) {
-        
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 60px;
         }
     }
 
@@ -143,9 +148,27 @@
     &__subscribe {
         margin-right: auto;
         margin-left: auto;
+        
 
         @media screen and (min-width: $tablet) {
             width: 450px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            gap: 12px;
+            margin-right: 0;
+            margin-left: auto; 
+            width: 100%;
+       }
+    }
+
+    &__subscribe-block {
+        @media screen and (min-width: $desktop) {
+            width: 570px;
+            margin-left: auto;
         }
     }
 

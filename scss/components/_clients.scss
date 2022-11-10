@@ -6,9 +6,15 @@
    
 
     &__item {
-        width: calc((100% - 2*30px) / 3);
-        height: 92px;  
-       
+        height: 92px; 
+        width: calc((100% - 1*30px) / 2);
+
+       @media screen and (min-width: $tablet) {
+         width: calc((100% - 2*30px) / 3);
+       }
+        @media screen and (min-width: $desktop) {
+         width: calc((100% - 5*30px) / 6);
+       }
     }
 
     &__link {
