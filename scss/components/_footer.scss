@@ -15,6 +15,15 @@
       
     }
 
+    &__contacts-wrapper {
+        @media screen and (min-width: $tablet) {
+            display: flex;
+            gap: 165px;
+            justify-content: center;
+            align-items: baseline;
+        }
+    }
+
     &__address-wrapper {
         margin-bottom: 60px;
 
@@ -70,7 +79,7 @@
         }
     }
 
-    &__follow {
+    &__follow-wraprer {
        margin-bottom: 60px;
 
        @media screen and (min-width: $tablet) {
@@ -132,7 +141,12 @@
   
 
     &__subscribe {
-        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+
+        @media screen and (min-width: $tablet) {
+            width: 450px;
+        }
     }
 
     &__subscribe-title {
@@ -171,6 +185,8 @@
         &:focus {
         border-color: $color-accent;
         }
+
+       
     }
 
     &__subscribe-icon {
