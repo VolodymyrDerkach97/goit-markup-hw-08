@@ -1,0 +1,118 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 48px 40px;
+    background-color: #fff;
+
+    overflow-y: scroll;
+
+    &.is-open {
+        display: block;
+    }
+
+    &__nav {
+        margin-bottom: 302px;
+    }
+
+    &__list {
+        @extend %list;
+
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        } 
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: $color-title-text;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+         color: $color-accent;
+        }
+    }
+
+    &__contacts {
+        margin-bottom: 64px;
+    }
+    
+    &__contacts-item {
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__contacts-link {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: $color-text-primary;
+    }
+
+    &__contacts-link-tell {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: $color-text-primary;
+    }
+
+    &__contacts {
+        @extend %list
+    }
+
+    &__social {
+        @extend %list;
+        
+        display: flex;
+        gap: 10px;
+    }
+    &__social-item {
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    &__social-link {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: $color-accent;
+        text-decoration: none;
+
+    }
+}
+
+.button-menu-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+     fill: $color-accent;
+    }
+
+}
+

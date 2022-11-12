@@ -1,16 +1,17 @@
 .header {
     border-bottom: 1px solid $border-color-secondary;
-
+    height: 60px;
   
+    @media screen and (min-width: $tablet) {
+        height: 80px;
+    }
+
     &__navigation {
         display: flex;
         align-items: center;
-        height: 60px;
+       height: 100%;
        
-        @media screen and (min-width: $tablet) {
-            height: 80px;
-        }
-    }
+    }   
 }
 
 .site-nav {
