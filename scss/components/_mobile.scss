@@ -1,0 +1,10 @@
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    &.is-open {
+        display: block;
+    }
+}

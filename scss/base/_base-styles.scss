@@ -29,6 +29,8 @@ body {
     @media screen and (min-width: $desktop) {
         width: $desktop;
     }
+
+    outline: 1px dashed red;
 }
 
 img {

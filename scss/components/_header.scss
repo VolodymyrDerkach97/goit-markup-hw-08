@@ -14,9 +14,13 @@
 }
 
 .site-nav {
-    display: flex;
+    display: none;
     align-items: center;
     
+    @media screen and (min-width: $tablet) {
+        display: flex;
+    }
+
     &__list{
         @extend %list;
         display: flex;
@@ -71,9 +75,14 @@
 
 .contacts {
     @extend %list;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 10px;
+    margin-left: auto;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+    }
 
     @media screen and (min-width: $desktop) {
         flex-direction: row;
@@ -119,20 +128,3 @@
 
 
 
-.menu {
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
-
-    @media screen and (min-width: $tablet) {
-        display: flex;
-        align-items: center;
-       gap: 96px
-
-    }
-
-    @media screen and (min-width: $desktop) {
-       gap: 315px
-
-    }
-}

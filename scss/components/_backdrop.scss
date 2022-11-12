@@ -4,12 +4,19 @@
     left: 0;
     width: 100vw;
     height: 100vh;
+    
 
     transform: scale(1);
     transition: transform 1000ms $cubic-bezier-primary,
                  opacity 1000ms $cubic-bezier-primary;
    
     background-color: $bg-backdrop;
+
+    overflow-y: scroll;
+   
+    @media screen and (max-width:$desktop) {
+        padding: 93px 15px
+    }
 }
 
 .backdrop.is-hidden {
