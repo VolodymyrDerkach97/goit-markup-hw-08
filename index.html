@@ -132,31 +132,82 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="price">
             <li class="price__item">
-              <img
-                src="./images/box1.jpg"
-                alt="людина працює за компютером"
-                width="370"
-              />
+           <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/price-one-desktop.webp    1x,
+                    ./images/price-one-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/price-one-desktop.jpg    1x,
+                    ./images/price-one-desktop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/price-one-desktop.jpg"
+                  alt="людина вибирає колір "
+                />
+              </picture>
               <div class="price__title-wrapper">
                 <h3 class="price__title">Десктопні додатки</h3>
               </div>
             </li>
             <li class="price__item">
-              <img
-                src="./images/box2.jpg"
-                alt="людина переглядає сайт"
-                width="370"
-              />
+                <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/price-two-desktop.webp    1x,
+                    ./images/price-two-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/price-two-desktop.jpg    1x,
+                    ./images/price-two-desktop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/price-two-desktop.jpg"
+                  alt="людина вибирає колір "
+                />
+              </picture>
               <div class="price__title-wrapper">
                 <h3 class="price__title">Мобільні додатки</h3>
               </div>
             </li>
             <li class="price__item">
-              <img
-                src="./images/box3.jpg"
-                alt="людина вибирає колір "
-                width="370"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/price-three-desktop.webp    1x,
+                    ./images/price-three-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/price-three-desktop.jpg    1x,
+                    ./images/price-three-desktop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/price-three-desktop.jpg"
+                  alt="людина вибирає колір "
+                />
+              </picture>
               <div class="price__title-wrapper">
                 <h3 class="price__title">Дизайнерські рішення</h3>
               </div>
@@ -214,14 +265,10 @@
                   type="image/jpg" />
 
                 <img
-                  srcset="
-                    ./images/pr-designer-mobile.jpg    1x,
-                    ./images/pr-designer-mobile@2x.jpg 2x
-                  "
+                  srcset="./images/pr-designer-mobile.jpg"
                   src="./images/igor.jpg"
                   alt="Ігор Дем'яненко"
               /></picture>
-
               <div class="team-cards__text-wrapper">
                 <h3 class="team-cards__title">Ігор Дем'яненко</h3>
                 <p class="team-cards__text" lang="en">Product Designer</p>
@@ -260,10 +307,10 @@
             <li class="team-cards">
               <picture>
                 <source
-                  media="(max-width: 767px)"
+                  media="(min-width: 1200px)"
                   srcset="
-                    ./images/developer-mobile.webp    1x,
-                    ./images/developer-mobile@2x.webp 2x
+                    ./images/developer-desktop.webp    1x,
+                    ./images/developer-desktop@2x.webp 2x
                   "
                   type="image/webp" />
                 <source
@@ -273,11 +320,37 @@
                     ./images/developer-tablet@2x.webp 2x
                   "
                   type="image/webp" />
-                <img
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/developer-mobile.webp    1x,
+                    ./images/developer-mobile@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/developer-desktop.jpg    1x,
+                    ./images/developer-desktop@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/developer-tablet.jpg    1x,
+                    ./images/developer-tablet@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(max-width: 767px)"
                   srcset="
                     ./images/developer-mobile.jpg    1x,
                     ./images/developer-mobile@2x.jpg 2x
                   "
+                  type="image/jpg" />
+
+                <img
+                  srcset="./images/developer-mobile.jpg"
                   src="./images/igor.jpg"
                   alt="Ігор Дем'яненко"
               /></picture>
@@ -319,10 +392,10 @@
             <li class="team-cards">
               <picture>
                 <source
-                  media="(max-width: 767px)"
+                  media="(min-width: 1200px)"
                   srcset="
-                    ./images/marketing-mobile.webp    1x,
-                    ./images/marketing-mobile@2x.webp 2x
+                    ./images/marketing-desktop.webp    1x,
+                    ./images/marketing-desktop@2x.webp 2x
                   "
                   type="image/webp" />
                 <source
@@ -332,11 +405,37 @@
                     ./images/marketing-tablet@2x.webp 2x
                   "
                   type="image/webp" />
-                <img
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/marketing-mobile.webp    1x,
+                    ./images/marketing-mobile@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/marketing-desktop.jpg    1x,
+                    ./images/marketing-desktop@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/marketing-tablet.jpg    1x,
+                    ./images/marketing-tablet@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(max-width: 767px)"
                   srcset="
                     ./images/marketing-mobile.jpg    1x,
                     ./images/marketing-mobile@2x.jpg 2x
                   "
+                  type="image/jpg" />
+
+                <img
+                  srcset="./images/marketing-mobile.jpg"
                   src="./images/igor.jpg"
                   alt="Ігор Дем'яненко"
               /></picture>
@@ -378,10 +477,10 @@
             <li class="team-cards">
               <picture>
                 <source
-                  media="(max-width: 767px)"
+                  media="(min-width: 1200px)"
                   srcset="
-                    ./images/ui-designer-mobile.webp    1x,
-                    ./images/ui-designer-mobile@2x.webp 2x
+                    ./images/ui-designer-desktop.webp    1x,
+                    ./images/ui-designer-desktop@2x.webp 2x
                   "
                   type="image/webp" />
                 <source
@@ -391,11 +490,37 @@
                     ./images/ui-designer-tablet@2x.webp 2x
                   "
                   type="image/webp" />
-                <img
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/ui-designer-mobile.webp    1x,
+                    ./images/ui-designer-mobile@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/ui-designer-desktop.jpg    1x,
+                    ./images/ui-designer-desktop@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/ui-designer-tablet.jpg    1x,
+                    ./images/ui-designer-tablet@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(max-width: 767px)"
                   srcset="
                     ./images/ui-designer-mobile.jpg    1x,
                     ./images/ui-designer-mobile@2x.jpg 2x
                   "
+                  type="image/jpg" />
+
+                <img
+                  srcset="./images/ui-designer-mobile.jpg"
                   src="./images/igor.jpg"
                   alt="Ігор Дем'яненко"
               /></picture>
