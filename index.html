@@ -132,7 +132,7 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="price">
             <li class="price__item">
-           <picture>
+              <picture>
                 <source
                   media="(min-width: 1200px)"
                   srcset="
@@ -159,7 +159,7 @@
               </div>
             </li>
             <li class="price__item">
-                <picture>
+              <picture>
                 <source
                   media="(min-width: 1200px)"
                   srcset="
@@ -188,22 +188,17 @@
             <li class="price__item">
               <picture>
                 <source
-                  media="(min-width: 1200px)"
                   srcset="
                     ./images/price-three-desktop.webp    1x,
                     ./images/price-three-desktop@2x.webp 2x
                   "
                   type="image/webp"
                 />
-                <source
-                  media="(min-width: 1200px)"
+                <img
                   srcset="
                     ./images/price-three-desktop.jpg    1x,
                     ./images/price-three-desktop@2x.jpg 2x
                   "
-                  type="image/jpg"
-                />
-                <img
                   src="./images/price-three-desktop.jpg"
                   alt="людина вибирає колір "
                 />
@@ -256,17 +251,12 @@
                     ./images/pr-designer-tablet@2x.jpg 2x
                   "
                   type="image/jpg" />
-                <source
-                  media="(max-width: 767px)"
+                <img
                   srcset="
                     ./images/pr-designer-mobile.jpg    1x,
                     ./images/pr-designer-mobile@2x.jpg 2x
                   "
-                  type="image/jpg" />
-
-                <img
-                  srcset="./images/pr-designer-mobile.jpg"
-                  src="./images/igor.jpg"
+                  src="./pr-designer-mobile.jpg"
                   alt="Ігор Дем'яненко"
               /></picture>
               <div class="team-cards__text-wrapper">
@@ -341,17 +331,12 @@
                     ./images/developer-tablet@2x.jpg 2x
                   "
                   type="image/jpg" />
-                <source
-                  media="(max-width: 767px)"
+                <img
                   srcset="
                     ./images/developer-mobile.jpg    1x,
                     ./images/developer-mobile@2x.jpg 2x
                   "
-                  type="image/jpg" />
-
-                <img
-                  srcset="./images/developer-mobile.jpg"
-                  src="./images/igor.jpg"
+                  src="./images/developer-mobile.jpg"
                   alt="Ігор Дем'яненко"
               /></picture>
               <div class="team-cards__text-wrapper">
@@ -426,17 +411,12 @@
                     ./images/marketing-tablet@2x.jpg 2x
                   "
                   type="image/jpg" />
-                <source
-                  media="(max-width: 767px)"
+                <img
                   srcset="
                     ./images/marketing-mobile.jpg    1x,
                     ./images/marketing-mobile@2x.jpg 2x
                   "
-                  type="image/jpg" />
-
-                <img
-                  srcset="./images/marketing-mobile.jpg"
-                  src="./images/igor.jpg"
+                  src="./images/marketing-mobile.jpg"
                   alt="Ігор Дем'яненко"
               /></picture>
               <div class="team-cards__text-wrapper">
@@ -511,17 +491,12 @@
                     ./images/ui-designer-tablet@2x.jpg 2x
                   "
                   type="image/jpg" />
-                <source
-                  media="(max-width: 767px)"
+                <img
                   srcset="
                     ./images/ui-designer-mobile.jpg    1x,
                     ./images/ui-designer-mobile@2x.jpg 2x
                   "
-                  type="image/jpg" />
-
-                <img
-                  srcset="./images/ui-designer-mobile.jpg"
-                  src="./images/igor.jpg"
+                  src="./images/ui-designer-mobile.jpg"
                   alt="Ігор Дем'яненко"
               /></picture>
               <div class="team-cards__text-wrapper">
@@ -728,35 +703,37 @@
           </li>
         </ul>
       </nav>
-      <div class="modile-menu__contact-wrapper"><ul class="mobile-menu__contacts">
-        <li class="mobile-menu__contacts-item">
-          <a class="mobile-menu__contacts-link-tell" href="tel:+380961111111">
-            +38 096 111 11 11</a
-          >
-        </li>
-        <li class="mobile-menu__contacts-item">
-          <a
-            class="mobile-menu__contacts-link"
-            href="mailto:info@devstudio.com"
-          >
-            info@devstudio.com</a
-          >
-        </li>
-      </ul>
-      <ul class="mobile-menu__social">
-        <li class="mobile-menu__social-item">
-          <a class="mobile-menu__social-link" href="">Instagram</a>
-        </li>
-        <li class="mobile-menu__social-item">
-          <a class="mobile-menu__social-link" href="">Twitter</a>
-        </li>
-        <li class="mobile-menu__social-item">
-          <a class="mobile-menu__social-link" href="">Facebook</a>
-        </li>
-        <li class="mobile-menu__social-item">
-          <a class="mobile-menu__social-link" href="">LinkedIn</a>
-        </li>
-      </ul></div>
+      <div class="modile-menu__contact-wrapper">
+        <ul class="mobile-menu__contacts">
+          <li class="mobile-menu__contacts-item">
+            <a class="mobile-menu__contacts-link-tell" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu__contacts-item">
+            <a
+              class="mobile-menu__contacts-link"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__social">
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="">Instagram</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="">Twitter</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="">Facebook</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="backdrop is-hidden" data-modal>

@@ -1,5 +1,9 @@
 .portfolio-list {
     @extend %list;
-    display: flex;
-    flex-wrap: wrap; 
+    
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 30px;
+    }
 }

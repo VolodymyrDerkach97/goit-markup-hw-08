@@ -15,10 +15,10 @@
     <header class="header">
       <div class="container">
         <div class="header__navigation">
+          <a href="./index.html" lang="en" class="logo header__logo">
+            <span>Web</span><span class="logo__text-studio">Studio</span>
+          </a>
           <nav class="site-nav">
-            <a href="./index.html" lang="en" class="logo header__logo">
-              <span>Web</span><span class="logo__text-studio">Studio</span>
-            </a>
             <ul class="site-nav__list">
               <li class="site-nav__item">
                 <a class="site-nav__link" href="./index.html">Студія</a>
@@ -53,6 +53,14 @@
               >
             </li>
           </ul>
+          <button type="button" class="button-menu js-open-menu">
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use
+                class="mobile-icon-menu"
+                href="./images/icons.svg#icon-menu"
+              ></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -94,12 +102,29 @@
                       особу.
                     </p>
                   </div>
-                  <img
-                    src="./images/portfolio1.jpg"
-                    alt="на ноутбуці відкиритий веб-сайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/tehnokrack-desktop.jpg    1x,
+                        ./images/tehnokrack-desktop@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tehnokrack-tablet.jpg    1x,
+                        ./images/tehnokrack-tablet@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <img
+                      srcset="
+                        ./images/tehnokrack-mobile.jpg    1x,
+                        ./images/tehnokrack-mobile@2x.jpg 2x
+                      "
+                      src="./images/tehnokrack-mobile.jpg"
+                      alt="на ноутбуці відкиритий веб-сайт"
+                  /></picture>
                 </div>
                 <div class="project__text-wrapper">
                   <h2 class="project__title">Технокряк</h2>
@@ -118,12 +143,32 @@
                       особу.
                     </p>
                   </div>
-                  <img
-                    src="./images/portfolio2.jpg"
-                    alt="два баскетболісти"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/new-orlean-desktop.jpg    1x,
+                        ./images/new-orlean-desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/new-orlean-tablet.jpg    1x,
+                        ./images/new-orlean-tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      srcset="
+                        ./images/new-orlean-mobile.jpg    1x,
+                        ./images/new-orlean-mobile@2x.jpg 2x
+                      "
+                      src="./images/new-orlean-mobile.jpg"
+                      alt="два баскетболісти"
+                    />
+                  </picture>
                 </div>
                 <div class="project__text-wrapper">
                   <h2 class="project__title">
@@ -144,12 +189,32 @@
                       особу.
                     </p>
                   </div>
-                  <img
-                    src="./images/portfolio3.jpg"
-                    alt="логотип ресторану"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/seafood-desktop.jpg    1x,
+                        ./images/seafood-desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/seafood-tablet.jpg    1x,
+                        ./images/seafood-tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      srcset="
+                        ./images/seafood-mobile.jpg    1x,
+                        ./images/seafood-mobile@2x.jpg 2x
+                      "
+                      src="./images/seafood-mobile.jpg"
+                      alt="логотип ресторану"
+                    />
+                  </picture>
                 </div>
                 <div class="project__text-wrapper">
                   <h2 class="project__title">
@@ -170,12 +235,32 @@
                       особу.
                     </p>
                   </div>
-                  <img
-                    src="./images/portfolio4.jpg"
-                    alt="навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/prime-desktop.jpg    1x,
+                        ./images/prime-desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/prime-tablet.jpg    1x,
+                        ./images/prime-tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      srcset="
+                        ./images/prime-mobile.jpg    1x,
+                        ./images/prime-mobile@2x.jpg 2x
+                      "
+                      src="./images/prime-mobile.jpg"
+                      alt="навушники"
+                    />
+                  </picture>
                 </div>
                 <div class="project__text-wrapper">
                   <h2 class="project__title">
@@ -196,14 +281,33 @@
                       особу.
                     </p>
                   </div>
-                  <img
-                    src="./images/portfolio5.jpg"
-                    alt="два подарункові бокси"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/boxes-desktop.jpg    1x,
+                        ./images/boxes-desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/boxes-tablet.jpg    1x,
+                        ./images/boxes-tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      srcset="
+                        ./images/boxes-mobile.jpg    1x,
+                        ./images/boxes-mobile@2x.jpg 2x
+                      "
+                      src="./images/boxes-mobile.jpg"
+                      alt="два подарункові бокси"
+                    />
+                  </picture>
                 </div>
-
                 <div class="project__text-wrapper">
                   <h2 class="project__title">
                     Проєкт <span lang="en">Boxes</span>
@@ -223,12 +327,32 @@
                       особу.
                     </p>
                   </div>
-                  <img
-                    src="./images/portfolio6.jpg"
-                    alt="моноблок"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/noborders-desktop.jpg    1x,
+                        ./images/noborders-desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/noborders-tablet.jpg    1x,
+                        ./images/noborders-tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      srcset="
+                        ./images/noborders-mobile.jpg    1x,
+                        ./images/noborders-mobile@2x.jpg 2x
+                      "
+                      src="./images/noborders-mobile.jpg"
+                      alt="моноблок"
+                    />
+                  </picture>
                 </div>
                 <div class="project__text-wrapper">
                   <h2 class="project__title" lang="en">
@@ -249,12 +373,32 @@
                       особу.
                     </p>
                   </div>
-                  <img
-                    src="./images/portfolio7.jpg"
-                    alt="книга"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/limited-edition-desktop.jpg    1x,
+                        ./images/limited-edition-desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/limited-edition-tablet.jpg    1x,
+                        ./images/limited-edition-tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      srcset="
+                        ./images/limited-edition-mobile.jpg    1x,
+                        ./images/limited-edition-mobile@2x.jpg 2x
+                      "
+                      src="./images/limited-edition-mobile.jpg"
+                      alt="книга"
+                    />
+                  </picture>
                 </div>
                 <div class="project__text-wrapper">
                   <h2 class="project__title">
@@ -275,12 +419,32 @@
                       особу.
                     </p>
                   </div>
-                  <img
-                    src="./images/portfolio8.jpg"
-                    alt="бирка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/lab-desktop.jpg    1x,
+                        ./images/lab-desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/lab-tablet.jpg    1x,
+                        ./images/lab-tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      srcset="
+                        ./images/lab-mobile.jpg    1x,
+                        ./images/lab-mobile@2x.jpg 2x
+                      "
+                      src="./images/lab-mobile.jpg"
+                      alt="бирка"
+                    />
+                  </picture>
                 </div>
                 <div class="project__text-wrapper">
                   <h2 class="project__title">Проєкт <span>LAB</span></h2>
@@ -299,12 +463,32 @@
                       особу.
                     </p>
                   </div>
-                  <img
-                    src="./images/portfolio9.jpg"
-                    alt="людина користується ноутбуком"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/growing-business-desktop.jpg    1x,
+                        ./images/growing-business-desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/growing-business-tablet.jpg    1x,
+                        ./images/growing-business-tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      srcset="
+                        ./images/growing-business-mobile.jpg    1x,
+                        ./images/growing-business-mobile@2x.jpg 2x
+                      "
+                      src="./images/growing-business-mobile.jpg"
+                      alt="людина користується ноутбуком"
+                    />
+                  </picture>
                 </div>
                 <div class="project__text-wrapper">
                   <h2 class="project__title" lang="en">Growing Business</h2>
@@ -408,5 +592,63 @@
         </div>
       </div>
     </footer>
+
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="button-menu-close js-close-menu">
+        <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+          <use href="./images/icons.svg#icon-close-small"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a
+              class="mobile-menu__link mobile-menu__link--current"
+              href="./index.html"
+              >Студія</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="modile-menu__contact-wrapper">
+        <ul class="mobile-menu__contacts">
+          <li class="mobile-menu__contacts-item">
+            <a class="mobile-menu__contacts-link-tell" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu__contacts-item">
+            <a
+              class="mobile-menu__contacts-link"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__social">
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="">Instagram</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="">Twitter</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="">Facebook</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
