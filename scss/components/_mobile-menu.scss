@@ -11,11 +11,13 @@
     overflow-y: scroll;
 
     &.is-open {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     &__nav {
-        margin-bottom: 302px;
+        margin-bottom: 32px;
     }
 
     &__list {

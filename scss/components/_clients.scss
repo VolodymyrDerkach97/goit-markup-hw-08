@@ -26,6 +26,7 @@
         border: 1px solid $border-color-link;
         border-radius: 4px;
         color: $color-icon;
+        outline: none;
     
         transition: color 250ms $cubic-bezier-primary,
                     border-color 250ms $cubic-bezier-primary;
