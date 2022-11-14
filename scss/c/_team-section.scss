@@ -1,8 +1,0 @@
-.team-section {
-    background-color: $bg-color-primary;
-
-    &__list {
-        @extend %list;
-        display: flex;
-    }
-}
