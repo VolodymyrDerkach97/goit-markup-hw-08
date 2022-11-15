@@ -14,9 +14,9 @@
     letter-spacing: 0.06em;
 
     transition: color 250ms $cubic-bezier-primary,
-                background-color 250ms $cubic-bezier-primary,
-                border-radius 250ms $cubic-bezier-primary,
-                box-shadow 250ms $cubic-bezier-primary; 
+    background-color 250ms $cubic-bezier-primary,
+    border-radius 250ms $cubic-bezier-primary,
+    box-shadow 250ms $cubic-bezier-primary; 
 
     border: 0px solid transparent;
     border-radius: 4px;
@@ -27,10 +27,12 @@
 
     &:hover,
     &:focus {
-    background-color: $bg-hover;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        background-color: $bg-hover;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
 }
+
+// Button menu
 
 .button-menu {
     padding: 0;
@@ -61,8 +63,8 @@
     margin: 0 auto;
     &__button:hover,
     &__button:focus {
-    background-color: $bg-hover;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        background-color: $bg-hover;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    }
 }
 
@@ -70,8 +72,7 @@
 .modal__button-close {
     position: absolute;
     top: 8px;
-    right: 8px; 
-   
+    right: 8px;  
 }
 
 .button-close {
@@ -92,7 +93,7 @@
         transform: translate(-50%, -50%);
     
         transition: fill 250ms $cubic-bezier-primary,
-                    translate 250ms $cubic-bezier-primary;
+        translate 250ms $cubic-bezier-primary;
         fill: currentColor;
     }
     
@@ -116,9 +117,8 @@
 
     &:hover,
     &:focus {
-     fill: $color-accent;
+        fill: $color-accent;
     }
-
 }
 
 
