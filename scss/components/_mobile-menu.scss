@@ -43,6 +43,10 @@
         &:focus {
          color: $color-accent;
         }
+
+        &--current {
+            color: $color-accent;
+        }
     }
 
     &__contacts {
@@ -69,6 +73,8 @@
          color: $color-accent;
         }
     }
+
+    
 
     &__contacts-link-tell {
         font-weight: 500;
